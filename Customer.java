@@ -1,5 +1,4 @@
 public class Customer {
-    int amount;
 
     public Customer() {
     }
