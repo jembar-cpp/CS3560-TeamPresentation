@@ -13,20 +13,18 @@ public class App {
             + "1: Merge sort\n"
             + "2: Selection sort");
         int input = sc.nextInt();
-        SortStrategy s;
+        SortStrategy s = null;
 
-        switch(input) {
-            case 0:
-                s = new BubbleSort();
-                break;
-            case 1:
-                s = new MergeSort();
-                break;
-            case 2:
-                s = new SelectionSort();
-                break;
-            default:
-                s = null;
+        if(input == 0) {
+            s = new BubbleSort();
+        }
+                
+        else if(input == 1) {
+            s = new MergeSort();
+        }
+        
+        else if(input == 2) {
+            s = new SelectionSort();
         }
 
         // The array to sort
