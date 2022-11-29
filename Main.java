@@ -7,9 +7,16 @@ public class Main {
         PayPal payPal = new PayPal();
         ApplePay applePay = new ApplePay();
 
+        System.out.println();
         customer.makePayment(bankAccount, 100);
+
+        System.out.println();
         customer.makePayment(payPal, 150);
+
+        System.out.println();
         customer.makePayment(applePay, 200);
+
+        System.out.println();
 
     }
 }
